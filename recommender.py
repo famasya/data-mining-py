@@ -174,7 +174,7 @@ class recommender:
                 distance = self.fn(self.data[username],
                                    self.data[instance])
                 distances.append((instance, distance))
-\        distances.sort(key=lambda artistTuple: artistTuple[1],
+        distances.sort(key=lambda artistTuple: artistTuple[1],
                        reverse=True)
         return distances
 
